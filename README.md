@@ -18,4 +18,7 @@ Curso de Representación del Conocimiento2023-2024 de la Universidad de Huelva
 - https://github.com/JJ/curso-tdd
 
 ## Dercargar SWI Prolog
-https://www.swi-prolog.org/download/stable
+- https://www.swi-prolog.org/download/stable
+
+## Documentación SWI Prolog sobre Listas
+- https://www.swi-prolog.org/pldoc/man?section=lists
