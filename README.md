@@ -13,3 +13,6 @@ Curso de Representación del Conocimiento2023-2024 de la Universidad de Huelva
 
 ## Comprar el libro Manual de docencia 95 Programación Declarativa
 - http://www.uhu.es/publicaciones/index.php?q=libros&code=1067
+
+## Curso Avanzado de Git de Dr. Merelo
+- https://github.com/JJ/curso-tdd
