@@ -16,3 +16,6 @@ Curso de Representación del Conocimiento2023-2024 de la Universidad de Huelva
 
 ## Curso Avanzado de Git de Dr. Merelo
 - https://github.com/JJ/curso-tdd
+
+## Dercargar SWI Prolog
+https://www.swi-prolog.org/download/stable
