@@ -9,4 +9,4 @@ Curso de Representación del Conocimiento2023-2024 de la Universidad de Huelva
 - https://www.youtube.com/user/josecarpioc
 
 ## Web del Dr. Jose Carpio
-http://www.uhu.es/jose.carpio/
+- http://www.uhu.es/jose.carpio/
