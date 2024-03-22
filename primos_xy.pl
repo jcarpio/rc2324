@@ -8,6 +8,12 @@
   R = [1,2,3,5,7]
 ---------------------------------------------------*/
 
+primos_xy(X, Y, [] ):- X > Y.
+
+primos_xy(X, Y, [X|R]):- primo(X), X =< Y, X2 is X + 1, primos_xy(X2, Y, R).
+  
+primos_xy(X, Y, R):- \+ primo(X), X =< Y, X2 is X + 1, primos_xy(X2, Y, R).
+  
 
 /*
   lista_divisores(+N, +Rango, -Lista)
@@ -28,3 +34,12 @@ lista_divisores(N, Rango, [Rango|R]):- Rango > 1, Rango2 is Rango - 1,
 lista_divisores(N, Rango, R):- Rango > 1, Rango2 is Rango - 1,
    Mod is mod(N,Rango), Mod \= 0,
    lista_divisores(N, Rango2, R).
+   
+
+/*
+  primo(+N)
+    es cierto si N es un número primo.
+*/
+
+primo(N):- N > 1, lista_divisores(N, N, [_, _]).
+primo(1).
