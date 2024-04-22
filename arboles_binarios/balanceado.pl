@@ -15,6 +15,7 @@ balanceado(+ArbolBinario)
 */
 
 
+balanceado(nil).
 balanceado(a(_, Hi, Hd)):-
   altura(Hi, Ai),
   altura(Hd, Ad),
