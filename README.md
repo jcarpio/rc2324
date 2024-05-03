@@ -22,3 +22,7 @@ Curso de Representación del Conocimiento2023-2024 de la Universidad de Huelva
 
 ## Documentación SWI Prolog sobre Listas
 - https://www.swi-prolog.org/pldoc/man?section=lists
+
+## Cuánta lotería hay que comprar para garantizar que se gane algo
+https://www.europapress.es/ciencia/laboratorio/noticia-cuanta-loteria-hay-comprar-garantizar-gane-algo-20230804102326.html
+https://arxiv.org/abs/2307.12430
