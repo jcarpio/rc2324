@@ -26,3 +26,8 @@ Curso de Representación del Conocimiento2023-2024 de la Universidad de Huelva
 ## Cuánta lotería hay que comprar para garantizar que se gane algo
 https://www.europapress.es/ciencia/laboratorio/noticia-cuanta-loteria-hay-comprar-garantizar-gane-algo-20230804102326.html
 https://arxiv.org/abs/2307.12430
+https://github.com/cushydom88/lottery-problem
+
+## What Were They Thinking? Pharmacologic priors implicit in a choice of 3+3 dose-escalation design
+https://arxiv.org/abs/2012.05301
+https://github.com/dcnorris/precautionary
