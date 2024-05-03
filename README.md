@@ -1,8 +1,6 @@
 # rc2324
 Curso de Representación del Conocimiento2023-2024 de la Universidad de Huelva 
 
-
-
 # Enlaces
 
 ## Canal de YouTube
@@ -31,3 +29,6 @@ https://github.com/cushydom88/lottery-problem
 ## What Were They Thinking? Pharmacologic priors implicit in a choice of 3+3 dose-escalation design
 https://arxiv.org/abs/2012.05301
 https://github.com/dcnorris/precautionary
+
+## Introducción a la Programación Lógica Scryer Prolog
+https://propuestas.eslib.re/2024/talleres/introduccion-programacion-logica-scryer-prolog
