@@ -53,3 +53,5 @@ ciclo(Grafo, V, Ciclos):-  findall(Camino, camino(Grafo, V, V, [], Camino), Cicl
 
 ciclos(G, Ciclos):- G = g(Vertices, _), member(V, Vertices), 
   findall(Ciclo, ciclo(G, V, Ciclo), Ciclos).
+
+%  grafo(4, G), findall(R, ciclos(G, R), Solucion).  
