@@ -1,0 +1,36 @@
+Consult:
+Hello, as constraint logic programming expert, how can I express that I want all lessons in diferent days. Slots in timetable are represented as numbers and Lessons for one subject are one array with the list of slots numbers for this lessons in the week. 
+
+Answer:
+In constraint logic programming (CLP), you can express the constraint that all lessons must occur on different days using a constraint solver like Prolog with a CLP library (e.g., CLP(FD) for finite domains). Here's how you can do it:
+
+    Define the Problem: Each lesson is assigned to a slot, and you want all slots for lessons of the same subject to be on different days.
+
+    Representation: Assume slots are represented as integers, and each integer corresponds to a specific time slot on a specific day.
+
+    Day Extraction: If slots can be uniquely mapped to days, you need a function to extract the day from a slot. For simplicity, let's assume the slots are numbered consecutively such that you can compute the day from the slot number.
+
+Here's a Prolog example using CLP(FD):
+
+:- use_module(library(clpfd)).
+
+% Define the predicate to extract day from slot.
+% Assuming each day has a fixed number of slots, e.g., 10 slots per day.
+slot_day(Slot, Day) :-
+    Day is (Slot - 1) // 10 + 1.
+
+% Constraint that all slots in the list are on different days.
+different_days(Slots) :-
+    maplist(slot_day, Slots, Days),
+    all_distinct(Days).
+
+% Example usage
+schedule(Lessons) :-
+    % Define your lessons with their respective slots
+    Lessons = [Slot1, Slot2, Slot3, Slot4], % and so on
+    Lessons ins 1..50, % assuming we have 50 slots
+    different_days(Lessons).
+
+% Run the query to find a valid schedule
+?- schedule(Lessons), label(Lessons).
+  
