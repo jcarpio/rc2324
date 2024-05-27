@@ -70,3 +70,5 @@ class_subject_teacher_times('1b', deu, sjk1, 4).
 
 room_alloc(r1, '1a', deu, 0).
 room_alloc(r2, '1a', deu, 1).
+
+coupling('1a', deu, 2, 3).
