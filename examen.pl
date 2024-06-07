@@ -68,8 +68,6 @@ mas_veces(+Lista, -Elem, -N)
 
 */   
 
-
-
 comprime([], []).
 
 comprime([E], [(E,1)]).
@@ -120,17 +118,21 @@ balanceado(+ArbolBinario)
 
 */
 
-balanceado(a(_, HI, HD),  ):-
+balanceado(nil).
+balanceado(a(_, HI, HD)):-
   altura(HI, AI),
   altura(HD, AD),
-  X is abs(AI - AD), X =< 1,
+  Dif is abs(AI - AD), Dif =< 1,
   balanceado(HI),
   balanceado(HD).
   
 altura(nil, 0).
 altura(a(_, HI, HD), R):- altura(HI, AI), altura(HD, AD), A is max(AI, AD), R is A + 1.
   
-
+arbol_2( a(1, a(2, a(3, a(6, nil, nil), nil), nil), a(4, nil, a(5, nil, a(7, nil, nil)))) ).
+  
+arbol_3( a(1, a(2, a(3, nil, nil), nil), a(4, nil, a(5, nil, nil))) ).  
+  
 /*
 
 anchura(+ArbolBinario, -R) 
@@ -138,3 +140,41 @@ anchura(+ArbolBinario, -R)
   de ArbolBinario recorridas en anchura.  
 
 */
+
+anchura(AB, R):- bin2gen(AB, AG), anchura(AG, R).
+
+anchura(a(Et, ListaHijos), [Et|R]):- anchura(ListaHijos, R).
+
+anchura([], []).
+anchura([a(Et,ListaHijos)|Resto], [Et|R2]):- append(Resto, ListaHijos, R), anchura(R, R2).
+
+/*
+bin2gen(+ArbolBinario, -ArbolGenerico)
+  es cierto si ArbolGenerico unifica con el arbol genérico equivalente
+  a ArbolBinario.
+*/
+bin2gen(a(Et, nil, nil), a(Et, [])).
+bin2gen(a(Et, HI, HD), a(Et, [RI, RD])):-  HI \= nil, HD \= nil, bin2gen(HI, RI), bin2gen(HD, RD).
+bin2gen(a(Et, nil, HD), a(Et, [RD])):- HD \= nil, bin2gen(HD, RD).
+bin2gen(a(Et, HI, nil), a(Et, [RI])):-  HI \= nil, bin2gen(HI, RI).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
